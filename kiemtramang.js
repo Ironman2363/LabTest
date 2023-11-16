@@ -1,9 +1,17 @@
 let hihi = [1, 2, 3, 4, 5, 6, 7, 8];
 
-for (let i = 0; i < hihi.length; i++) {
-  if (hihi[i] > hihi[i + 1]) {
-    console.log("Sắp xếp không tăng dần");
-  }
-  console.log("Sắp xếp tăng dần");
+function kiemTratangdan(arr) {
+  return arr.every((soA, index, mang) => {
+    if (index < mang.length - 1) {
+      return soA <= mang[index + 1];
+    }
+    return true;
+  });
 }
-//Viết một hàm nhận vào một mảng số nguyên và kiểm tra xem mảng đó có đang được sắp xếp theo thứ tự tăng dần hay không.
+let kq = kiemTratangdan(hihi);
+if (kq) {
+  console.log("Chuẩn sắp xếp tăng dần");
+} else {
+  console.log("Sắp xếp không tăng dần");
+}
+//Viết một hàm nhận vào một mảng số nguyên và kiểm tra xem mảng đó có đang được sắp xếp theo thứ tự tăng dần hay không. sử dụng method

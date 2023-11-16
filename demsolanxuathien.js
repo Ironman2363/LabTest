@@ -1,10 +1,10 @@
 let mang = [2, 6, 2, 4, 8, 2, 7];
-let socandem = 2;
-let dem = 0;
-for (let i = 0; i < mang.length; i++) {
-  if (mang[i] == socandem) {
-    dem++;
-  }
+let soCandem = 2;
+
+function dem(arr, soCandem) {
+  let mangLoc = arr.filter((so) => soCandem === so);
+  return mangLoc.length;
 }
-console.log("Số lần xuất hiện là:", dem);
+let demSo = dem(mang, soCandem);
+console.log("Số lần xuất hiện là:", demSo);
 //Viết một hàm nhận vào một mảng và một số nguyên, sau đó trả về số lần xuất hiện của số đó trong mảng.

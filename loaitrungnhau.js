@@ -1,5 +1,5 @@
 function loaiBoTrung(arr) {
-  let mangMoi = [...new Set(arr)];
+  let mangMoi = arr.filter((value, index,mang) => mang.indexOf(value) === index);
   return mangMoi;
 }
 let mang = [1, 2, 3, 5, 9, 3, 4, 2, 5, 2, 6, 6, 6, 6, 6, 6, 6];

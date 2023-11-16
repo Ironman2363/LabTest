@@ -1,8 +1,8 @@
-let hoTen = "Phạm Tiến Dũng";
-let revertName = "";
-for (let i = hoTen.length - 1; i >= 0; i--) {
-  revertName += hoTen[i];
-}
+let hoTen = "phamtiendunglaptrinhmobile";
+let revertName = hoTen.split("").reverse().join("");
+// split chuyen chuoi thanh mang
+// reverse dao nguoc mang
+// joun chuyen mang thanh chuoi
 console.log(revertName);
 
-// Viết một hàm nhận vào một chuỗi và trả về chuỗi đảo ngược của nó.
+// Viết một hàm nhận vào một chuỗi và trả về chuỗi đảo ngược của nó sử dụng method

@@ -4,13 +4,12 @@ let myObject = {
   namsinh: 7,
   lop: 123,
 };
-let keycanxoa = "namsinh";
+let keycanxoa = "ten";
 function xoaThuoctinh(obj, key) {
-  let myObject1 = { ...myObject };
-  if (myObject1.hasOwnProperty(key)) {
-    delete myObject1[key];
+  if (obj.hasOwnProperty(key)) {
+    delete obj[key];
   }
-  return myObject1;
+  return obj;
 }
 let obj = xoaThuoctinh(myObject, keycanxoa);
 console.log(obj);
